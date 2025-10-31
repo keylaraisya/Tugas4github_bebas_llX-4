@@ -329,3 +329,78 @@ footer {
         margin: 0 15px;
     }
 }
+/* ... (Gaya CSS yang sudah ada) ... */
+
+/* --- Gaya Baru untuk Gambar --- */
+
+.hero-image {
+    width: 80%; /* Gambar hero memenuhi 80% lebar kontainer */
+    max-height: 400px;
+    object-fit: cover;
+    margin: 20px auto 30px; /* Jarak atas/bawah */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.about-section {
+    padding: 60px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.about-image {
+    width: 40%;
+    max-width: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-content p {
+    width: 60%;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Program Section (menggunakan ikon sebagai pengganti gambar) */
+.program-item {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.program-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #007bff; /* Warna biru sebagai aksen */
+}
+
+/* Penyesuaian Media Queries untuk Gambar Responsif */
+@media (max-width: 768px) {
+    .hero-image {
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image,
+    .about-content p {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* ... (Gaya CSS lainnya yang sudah ada) ... */
