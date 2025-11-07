@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDN Nusantara 1</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gaya CSS Tambahan untuk Portofolio - Anda bisa pindahkan ini ke style.css */
+        .portfolio-group, .member-card {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .member-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .group-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <h1>SDN Nusantara 1</h1>
@@ -15,19 +43,16 @@
                 <ul>
                     <li><a href="#about">Tentang Kami</a></li>
                     <li><a href="#program">Program</a></li>
-                    <li><a href="#gallery">Galeri</a></li>
-                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#portfolio">Portofolio Kelompok</a></li> <li><a href="#contact">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h2>Mencetak Generasi Cerdas dan Berkarakter</h2>
 
-            <!-- Foto utama -->
             <img src="webcam-toy-photo9.jpg" alt="Foto Siswa SDN Nusantara 1" class="hero-photo">
 
             <p>Selamat datang di SDN Nusantara 1. Tempat belajar yang menyenangkan dan berkualitas.</p>
@@ -35,7 +60,6 @@
         </div>
     </section>
 
-    <!-- Tentang Kami -->
     <section id="about" class="about">
         <div class="container">
             <h2>Tentang Kami</h2>
@@ -43,7 +67,6 @@
         </div>
     </section>
 
-    <!-- Program Unggulan -->
     <section id="program" class="program">
         <div class="container">
             <h2>Program Unggulan</h2>
@@ -64,26 +87,50 @@
         </div>
     </section>
 
-    <!-- Galeri -->
-    <section id="gallery" class="gallery">
+    <section id="portfolio" class="gallery">
         <div class="container">
-            <h2>Galeri Kegiatan Sekolah</h2>
-            <div class="gallery-grid">
-                <img src="webcam-toy-photo9.jpg" alt="Kegiatan Siswa 1">
-                <img src="webcam-toy-photo13.jpg" alt="Kegiatan Siswa 2">
-                <img src="webcam-toy-photo14.jpg" alt="Kegiatan Siswa 3">
-                <img src="webcam-toy-photo16.jpg" alt="Kegiatan Siswa 4">
-                <img src="webcam-toy-photo17.jpg" alt="Kegiatan Siswa 5">
-                <img src="webcam-toy-photo19.jpg" alt="Kegiatan Siswa 6">
-                <img src="webcam-toy-photo20.jpg" alt="Kegiatan Siswa 7">
-                <img src="webcam-toy-photo22.jpg" alt="Kegiatan Siswa 8">
-                <img src="webcam-toy-photo24.jpg" alt="Kegiatan Siswa 9">
-                <img src="webcam-toy-photo26.jpg" alt="Kegiatan Siswa 10">
+            <h2>🏆 Portofolio Kelompok: Jejak Kebersamaan</h2>
+            <p>Berikut adalah hasil kerja dan profil anggota dari kelompok kami.</p>
+
+            <div class="portfolio-group">
+                <h3>Foto Bersama Kelompok</h3>
+                <div class="group-photo">
+                    <img src="webcam-toy-photo9.jpg" alt="Foto Bersama Kelompok" title="Foto Bersama: Tim Solidaritas">
+                </div>
+                <h4>Nama Foto: Tim Solidaritas</h4>
+                <p>Foto ini diambil saat kami menyelesaikan proyek bersama. Mencerminkan semangat kolaborasi dan kebersamaan tim.</p>
+            </div>
+
+            <h3 style="margin-top: 40px; border-bottom: 2px solid #333; padding-bottom: 10px;">Profil Anggota</h3>
+            <div class="member-grid">
+
+                <div class="member-card">
+                    <img src="webcam-toy-photo13.jpg" alt="Foto Andrean">
+                    <h4>Nama: Andrean</h4>
+                    <p><strong>Nama Foto:</strong> Potret Andrean</p>
+                    <p><strong>Hobi:</strong> Main bola</p>
+                    <p><strong>Alamat:</strong> Dayeuhkolot</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="webcam-toy-photo13.jpg" alt="Foto Askia"> 
+                    <h4>Nama: Askia</h4>
+                    <p><strong>Nama Foto:</strong> Potret Askia</p>
+                    <p><strong>Hobi:</strong> Masak</p>
+                    <p><strong>Alamat:</strong> Rancamanyar</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="webcam-toy-photo16.jpg" alt="Foto Restyana">
+                    <h4>Nama: Restyana</h4>
+                    <p><strong>Nama Foto:</strong> Potret Restyana</p>
+                    <p><strong>Hobi:</strong> Memotret</p>
+                    <p><strong>Alamat:</strong> Rancamanyar</p>
+                </div>
+                
             </div>
         </div>
     </section>
-
-    <!-- Kontak -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Kontak Kami</h2>
@@ -92,7 +139,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 SDN Nusantara 1. All rights reserved.</p>
